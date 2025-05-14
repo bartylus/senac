@@ -1,0 +1,17 @@
+import kotlin.random.Random
+
+fun main() {
+    println("=== Cálculo de IMC para 5 pessoas ===\n")
+
+    for (i in 1..5) {
+        val peso = gerarPeso()
+        val altura = gerarAltura()
+
+        val imc = calcularIMC(peso, altura)
+        val classificacao = classificarIMC(imc)
+
+        println("Pessoa $i:")
+        println("Peso: %.1f kg | Altura: %.2f m".format(peso, altura))
+        println("IMC: %.2f | Classificação: $classificacao\n".format(imc))
+    }
+}

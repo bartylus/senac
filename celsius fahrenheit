@@ -1,0 +1,13 @@
+fun main() {
+    val celsius = listOf(0.0, 10.0, 20.0, 30.0, 40.0)
+
+    val fahrenheit = celsius.map { celsiusPraFahrenheit(it) }
+
+    println("Temperaturas em Celsius: $celsius")
+    println("Temperaturas em Fahrenheit: $fahrenheit")
+}
+
+
+fun celsiusPraFahrenheit(celsius: Double): Double {
+    return (celsius * 9 / 5) + 32
+}

@@ -1,0 +1,14 @@
+// função sem parametro e sem retorno
+fun bomdia() {
+    println("Bom dia")
+}
+//função com parametro e sem retorno
+fun bomdia1(msg:String){
+    println("Bom dia $msg")    
+}
+//principal
+fun main (){
+    bomdia()
+    var nome:String = "Senac"
+    bomdia1(nome)
+}

@@ -1,0 +1,30 @@
+import kotlin.random.Random
+ 
+// Funções para as operações
+fun soma(a: Int, b: Int): Int {
+    return a + b
+}
+ 
+fun subtrai(a: Int, b: Int): Int {
+    return a - b
+}
+ 
+fun multiplica(a: Int, b: Int): Int {
+    return a * b
+}
+ 
+fun divide(a: Int, b: Int): Double {
+    return a.toDouble() / b.toDouble()
+}
+ 
+// Função principal
+fun main() {
+    val n1 = Random.nextInt(1, 10)
+    val n2 = Random.nextInt(1, 10)
+ 
+    println("Numeros sorteados: $n1 e $n2")
+    println("Soma: ${soma(n1, n2)}")
+    println("Subtração: ${subtrai(n1, n2)}")
+    println("Multiplicação: ${multiplica(n1, n2)}")
+    println("Divisão: ${"%.2f".format(divide(n1, n2))}")
+}

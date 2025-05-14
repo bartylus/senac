@@ -1,0 +1,15 @@
+fun main() {
+    val pontosTuristicos = listOf(
+        "Igreja de São Pelegrino",
+        "Museu Municipal",
+        "Parque da Festa da Uva",
+        "Monumento Nacional ao Imigrante",
+        "Vinícolas da região",
+        "Casa de Pedra",
+        "Réplicas de Caxias do Sul"
+    )
+    println("Pontos turísticos de Caxias do Sul:")
+    for (ponto in pontosTuristicos) {
+        println("- $ponto")
+    }
+}

@@ -1,0 +1,25 @@
+import kotlin.random.Random
+ 
+fun gerarNotas(): List<Double> {
+    return List(3) { Random.nextInt(0, 11).toDouble() }
+}
+fun calcularMedia(notas: List<Double>): Double {
+    return notas.sum() / notas.size
+}
+fun classificarAluno(media: Double): String {
+    return when {
+        media in 9.0..10.0 -> "PD" 
+        media in 7.0..8.9 -> "ED"  
+        else -> "ND"              
+    }
+}
+fun main() {
+    val notas = gerarNotas()
+    println("Notas: $notas")
+ 
+    val media = calcularMedia(notas)
+    println("Média: %.2f".format(media))
+ 
+    val resultado = classificarAluno(media)
+    println("Nota: $resultado")
+}

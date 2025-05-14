@@ -1,0 +1,19 @@
+import kotlin.random.Random
+
+fun main() {
+    val numero1 = Random.nextInt(1, 101) 
+    val numero2 = Random.nextInt(1, 101) 
+
+    println("Número 1: $numero1")
+    println("Número 2: $numero2")
+
+    compararMaior(numero1, numero2)
+}
+
+fun compararMaior(a: Int, b: Int) {
+    when {
+        a > b -> println("O número maior é: $a")
+        a < b -> println("O número maior é: $b")
+        else -> println("Os dois números são iguais.")
+    }
+}

@@ -1,0 +1,16 @@
+fun main() {
+    val listaCafeDaManha = listOf(
+        "Pão",
+        "Manteiga",
+        "Café",
+        "Leite",
+        "Queijo",
+        "Presunto",
+        "Frutas",
+        "Iogurte"
+    )
+    println("Lista de compras para o café da manhã:")
+    for (item in listaCafeDaManha) {
+        println("- $item")
+    }
+}

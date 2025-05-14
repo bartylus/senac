@@ -1,0 +1,15 @@
+fun main() {
+    val meiosDeTransporte = listOf(
+        "Ônibus urbano",
+        "Táxi",
+        "Aplicativos de transporte (Uber, 99)",
+        "Carro particular",
+        "Motocicleta",
+        "Bicicleta",
+        "Caminhada"
+    )
+    println("Meios de transporte em Caxias do Sul:")
+    for (meio in meiosDeTransporte) {
+        println("- $meio")
+    }
+}
